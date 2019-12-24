@@ -7,8 +7,8 @@ modified by https://github.com/EJH2
 <!DOCTYPE html>
 <html lang="en" class="theme-dark">
 <head>
-<link rel="stylesheet" href="https://canary.discordapp.com/assets/0.8e4d5a872c5561c269e1.css"><link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEQ0lEQVRYR+2Xa0ybVRjHf29LCwVKx23cBuPqCot4wZjFOYIZwcVg1GUzWxxbNiZTYqLZIC6b+GXMaYBFFonMgWbiB6+ZZhiziYlbYjDOTbcF6JSOi4BykQWKFFra15xOykpLW8KyffF8aXLO0+f/O8/znOecV+K/sflTWZnUaziIzMtAxOz8bf4dRaK2N0l/+LNnJZvwLc0K7Ks2vIYsH7rNgp7dSVJFTZm+0hWgqmMEiLwjAPB3TXlm1HwA+Q6JO2RqyjMd0Z9LQVXH/wALRiA+OpCc1TqWaVX0D01x2TCOJkhJoFrhCOeUxY7Famfdg+HERwfR86eZi21jDAxPL5hVv1KgDQ7gmfwYYiLV/DVicQiujAtyiHsapn9m6Oo3ExSoIGF5EJ29k3z53SCmyRk3c78AthXGc2+G1vFnpdJZLn7VqtVqR6VS8KthnI+aBxYPoNMGcLAkHcXidN2E7DIcfq+TMZNrFHxGYMOj0eSvuT1t4dvWEc78INrM3PAJcOD5NCJ0Kr/C7ctodMzKGyeM/gOIqt+7I8XN77TFTt/gFCtigpwnYNZoYtLG0Og0ictA7u1GNptRhIWhyshwmBw92eVyKrxGYF1OBE89ttwFwDxl4+iH3dwYtxIepmLv9mTnaRi+YeHsC0dIvnCauK6LruBqNcEFBRhynqY5dK1zzSuAqP779WEuji5fM9F0ut85V/RkAvet0jJ17hzdxaWoje2+MkGvPpfzG19nPDzBeysW4RdpuHWIXVZ/0IXNLqNUSJTtTEFz9hRDW7a4CYcWFRFVV4dCq8XU2Mjw7t1Om0ltFF/vqmd/7aaF74JDL2V4bDY9A2bajRNkpYUS8/tPDOTleRUXi/MBxJyACDGNxKbCoMfLqKpM77ylRH82m20Ea1y7X192NparV10A4lpa0Kxf7zLnCUAYyPBxOmz1CFC+M4WYyLkUiJ7ecX2ClXEaUhODmah/l5HSUhehFW1tqLOy3CKyEIAwVMJajwDakABEIaYlBjsdio52qX2MUy2DbKzfRrjhgkcAS3s7062taIuLHeveAGR4Z8H3gFjITAvlodU6kuM1jhQ0fPEH3cZRSg484LZTEQEhLAouuqHBLwAJriz6QRI+aGRrdaHXI+cvgHCyaIDovjY21266ewC6kR6ee2vD3QMQynv2Z6O0WReE8DcFMvx4awomAY3Pfgo88f6LJHd8v2QACSqdAGVVHSdl2O4PQNqVMzze9MqSAYBVToBX3zTqZpSWz4F8fyAKG/eQZDjv0dSfFEhQnQrlbg+ufdXX9JJsj/UFcc8vX8XmfVJRp7RZ3b4jfQH0p68ht/Nm+pf04uuEHAmaAZ/AsxsS4t/sOMaRioeXDiCcXocYO7wtgfu9PC+MtkDNsfrKS3oJCtweJL5C7mu9Gx6ZuXm75QLZs/biqCmgRYamNPit5PjPKu14yPGa8sxdwuZfC4zcA+/NPloAAAAASUVORK5CYII=" type="image/png">    <!-- section:title -->
     <title>{% block title %}{% endblock %}</title>
+    {% block init_css %}{% endblock %}
 
     {% load static %}
     <meta charset="UTF-8">
