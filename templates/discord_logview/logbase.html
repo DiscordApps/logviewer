@@ -5,8 +5,9 @@ modified by https://github.com/EJH2
 © 2019 EJH2
 !-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
 <head>
+<link rel="stylesheet" href="https://canary.discordapp.com/assets/0.8e4d5a872c5561c269e1.css"><link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEQ0lEQVRYR+2Xa0ybVRjHf29LCwVKx23cBuPqCot4wZjFOYIZwcVg1GUzWxxbNiZTYqLZIC6b+GXMaYBFFonMgWbiB6+ZZhiziYlbYjDOTbcF6JSOi4BykQWKFFra15xOykpLW8KyffF8aXLO0+f/O8/znOecV+K/sflTWZnUaziIzMtAxOz8bf4dRaK2N0l/+LNnJZvwLc0K7Ks2vIYsH7rNgp7dSVJFTZm+0hWgqmMEiLwjAPB3TXlm1HwA+Q6JO2RqyjMd0Z9LQVXH/wALRiA+OpCc1TqWaVX0D01x2TCOJkhJoFrhCOeUxY7Famfdg+HERwfR86eZi21jDAxPL5hVv1KgDQ7gmfwYYiLV/DVicQiujAtyiHsapn9m6Oo3ExSoIGF5EJ29k3z53SCmyRk3c78AthXGc2+G1vFnpdJZLn7VqtVqR6VS8KthnI+aBxYPoNMGcLAkHcXidN2E7DIcfq+TMZNrFHxGYMOj0eSvuT1t4dvWEc78INrM3PAJcOD5NCJ0Kr/C7ctodMzKGyeM/gOIqt+7I8XN77TFTt/gFCtigpwnYNZoYtLG0Og0ictA7u1GNptRhIWhyshwmBw92eVyKrxGYF1OBE89ttwFwDxl4+iH3dwYtxIepmLv9mTnaRi+YeHsC0dIvnCauK6LruBqNcEFBRhynqY5dK1zzSuAqP779WEuji5fM9F0ut85V/RkAvet0jJ17hzdxaWoje2+MkGvPpfzG19nPDzBeysW4RdpuHWIXVZ/0IXNLqNUSJTtTEFz9hRDW7a4CYcWFRFVV4dCq8XU2Mjw7t1Om0ltFF/vqmd/7aaF74JDL2V4bDY9A2bajRNkpYUS8/tPDOTleRUXi/MBxJyACDGNxKbCoMfLqKpM77ylRH82m20Ea1y7X192NparV10A4lpa0Kxf7zLnCUAYyPBxOmz1CFC+M4WYyLkUiJ7ecX2ClXEaUhODmah/l5HSUhehFW1tqLOy3CKyEIAwVMJajwDakABEIaYlBjsdio52qX2MUy2DbKzfRrjhgkcAS3s7062taIuLHeveAGR4Z8H3gFjITAvlodU6kuM1jhQ0fPEH3cZRSg484LZTEQEhLAouuqHBLwAJriz6QRI+aGRrdaHXI+cvgHCyaIDovjY21266ewC6kR6ee2vD3QMQynv2Z6O0WReE8DcFMvx4awomAY3Pfgo88f6LJHd8v2QACSqdAGVVHSdl2O4PQNqVMzze9MqSAYBVToBX3zTqZpSWz4F8fyAKG/eQZDjv0dSfFEhQnQrlbg+ufdXX9JJsj/UFcc8vX8XmfVJRp7RZ3b4jfQH0p68ht/Nm+pf04uuEHAmaAZ/AsxsS4t/sOMaRioeXDiCcXocYO7wtgfu9PC+MtkDNsfrKS3oJCtweJL5C7mu9Gx6ZuXm75QLZs/biqCmgRYamNPit5PjPKu14yPGa8sxdwuZfC4zcA+/NPloAAAAASUVORK5CYII=" type="image/png">    <!-- section:title -->
     <title>{% block title %}{% endblock %}</title>
 
     {% load static %}
@@ -46,8 +47,8 @@ modified by https://github.com/EJH2
     <link rel="shortcut icon" href="{% static 'discord_logview/icons/favicon.png' %}">
     {% block extra_css %}{% endblock %}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>#}
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>#}
     {% if log.chunked %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.5/infinite-scroll.pkgd.min.js"></script>
     {% endif %}
@@ -58,6 +59,40 @@ modified by https://github.com/EJH2
     <script src="{% static 'discord_logview/js/logs.js' %}"></script>
 </head>
 <body class="no-js"{% if export %} style="margin-top: 20px"{% endif %}>
+{#<div class="userPopout-3XzG_A">#}
+{#    <div class="headerPlaying-j0WQBV header-2BwW8b size16-14cGz5">#}
+{#        <div class="flex-1xMQg5 flex-1O1GKY vertical-V37hAW flex-1O1GKY directionColumn-35P_nr justifyCenter-3D2jYp alignCenter-1dQNNs noWrap-3jynv6 headerTop-3C2Zn0" style="flex: 1 1 auto;">#}
+{#            <div tabindex="0" class="avatarWrapperNormal-3wFMbf avatarWrapper-3H_478" role="button">#}
+{#                <div class="wrapper-3t9DeA" role="img" aria-label="Patron Logger, Online" aria-hidden="false" style="width: 80px; height: 80px;">#}
+{#                    <svg width="92" height="80" viewBox="0 0 92 80" class="mask-1l8v16" aria-hidden="true">#}
+{#                        <defs>#}
+{#                            <mask id="avatar-status-round" maskContentUnits="objectBoundingBox" viewBox="0 0 1 1">#}
+{#                                <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>#}
+{#                            </mask>#}
+{#                        </defs>#}
+{#                        <foreignObject x="0" y="0" width="80" height="80" mask="url(#avatar-status-round)">#}
+{#                            <img src="https://cdn.discordapp.com/avatars/579149474975449098/aee4bd49b196975b9c9099e156db46b7.png?size=128" alt=" " class="avatar-VxgULZ" aria-hidden="true">#}
+{#                        </foreignObject>#}
+{#                    </svg>#}
+{#                </div>#}
+{#                <svg width="80" height="80" class="avatarHint-1qgaV3" viewBox="0 0 80 80">#}
+{#                    <foreignObject x="0" y="0" width="80" height="80" mask="url(#avatar-status-round)">#}
+{#                        <div class="avatarHintInner-Dco91E size10-39i14u height12-2Ltw-k">View Profile</div>#}
+{#                    </foreignObject>#}
+{#                </svg>#}
+{#            </div>#}
+{#            <div class="headerText-2sdzFM userSelectText-1o1dQ7">#}
+{#                <div class="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignCenter-1dQNNs noWrap-3jynv6" style="flex: 1 1 auto;">#}
+{#                    <div class="headerTagNoNickname-ENx6no headerTag-2pZJzA size14-3iUx6q size16-14cGz5 nameTag-m8r81H">#}
+{#                        <span class="username-2b1r56 headerTagUsernameNoNickname-2_H881">Patron Logger</span>#}
+{#                        <span>#2596</span>#}
+{#                        <span class="botTagInvert-18-95s botTag-2WPJ74 bot-2Fta1w">BOT</span>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
     {% if log.type == "logger" %} {# Patrons, smh #}
     <!--
     hahayes
@@ -93,7 +128,7 @@ modified by https://github.com/EJH2
         </div>
         {% block far-buttons %}{% endblock %}
     </div>
-    <div id="message-container" class="infinite-container">
+    <div id="message-container" class="infinite-container" style="height: 100%">
         {% block messages %}{% endblock messages %}
     </div>
     {% if log.page and log.page.has_next %}

@@ -4,6 +4,7 @@ from web import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('newsite', views.new_page, name='n'),
     re_path(r'preview/(?P<pk>\w{22})/?$', views.log_preview, name='log-preview'),
     re_path(r'preview/(?P<pk>\w{22})/raw/?$', views.log_preview_raw, name='log-preview-raw'),
     re_path(r'preview/(?P<pk>\w{22})/export/?$', views.log_preview_export, name='log-preview-export'),

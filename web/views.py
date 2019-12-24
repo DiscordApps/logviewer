@@ -23,6 +23,11 @@ def index(request):
     return render(request, 'discord_logview/index.html', context={'iso': pendulum.now().isoformat()})
 
 
+# Create your views here.
+def new_page(request):
+    return render(request, 'discord_logview/newbody.html')
+
+
 @login_required
 def new(request):
     if request.method == 'POST':
